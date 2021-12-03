@@ -13,28 +13,7 @@ const images = [
   },
 ];
 
-// const img = images.map(option => {
-//   const imgEl = document.createElement('img');
-// imgEl.src = option.url;
-// imgEl.alt = option.alt;
-
-//   return imgEl;
-// });
-
-// const makeImg = options => {
-//   return images.map(option => {
-//     const imgEl = document.createElement('img');
-//     imgEl.src = option.url;
-//     imgEl.alt = option.alt;
-
-//     return imgEl;
-//   })
-// }
-
-// const img = makeImg(images)
-
 const galleryEl = document.querySelector('.gallery');
 
-const imgEl = images.map((image) => `<li><img scr='${image.url}' alt='${image.alt}'></li>`).join('');
-// console.log(imgEl)
+const imgEl = images.map((image) => `<li><img src='${image.url}' alt='${image.alt}'></li>`).join('');
 galleryEl.insertAdjacentHTML('beforeend', imgEl)

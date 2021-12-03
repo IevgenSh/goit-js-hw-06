@@ -30,3 +30,13 @@ img {
 li {
   list-style: none;
 }
+
+.gallery {
+  display: flex;
+}
+
+.gallery img {
+  width: 240px;
+  height: auto;
+  margin-right: 10px;
+}
